@@ -30,17 +30,17 @@ class Welcome extends CI_Controller {
 		$this->load->view('eval');
 	}
 
-	/*function validar()
+	function validar()
 	{	
 		//echo "Hola<br>";
+		//Aqui estamos recibiendo los datos del formulario eva1.php.
+		$name = $this->input->post('nombre1');
+		$lastname = $this->input->post('apellido1');
 
-		/*$name = $this->input->post('name');
-		$lastname = $this->input->post('lastname');
-
-		echo "Nombre: ".$name."  Apellido: ".$lastname;*/
+		echo "Nombre: ".$name."  Apellido: ".$lastname;
 
 		//$data = array('nombre' => $this->input->post('name'),'apellido' => $this->input->post('lastname') );
 
 		//$this->form_model->guardar($data);
-	//}
+	}
 }
